@@ -40,7 +40,6 @@ namespace GUI
             //Limpar tela
             this.LimpaTela();
             this.alteraBotes(1);
-
         }
 
         private void btSalvar_Click(object sender, EventArgs e)
@@ -60,7 +59,6 @@ namespace GUI
                     //Cadastrar uma categoria
                     bll.Incluir(modelo);
                     MessageBox.Show("Cadastro efetuado: Codigo "+modelo.CatCod.ToString());
-
                 }
                 else
                 {
@@ -83,12 +81,10 @@ namespace GUI
         {
             this.operacao = "alterar";
             this.alteraBotes(2);
-
         }
 
         private void btExcluir_Click(object sender, EventArgs e)
         {
-
             try
             {
                 DialogResult d = MessageBox.Show("Deseja excluir o registro?", "Aviso", MessageBoxButtons.YesNo);
@@ -124,8 +120,6 @@ namespace GUI
                 txtCodigo.Text = modelo.CatCod.ToString();
                 txtNome.Text = modelo.CatNome;
                 alteraBotes(3);
-
-
             }
             else
             {

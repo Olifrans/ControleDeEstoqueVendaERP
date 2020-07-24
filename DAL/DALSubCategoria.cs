@@ -9,12 +9,9 @@ using Modelo;
 
 namespace DAL
 {
-
-
     //Class que representa a tabela subcategoria catcode e catnome no banco de dados
     class DALSubCategoria
     {
-
         private DALConexao conexao;
         public DALSubCategoria(DALConexao cx)
         {
