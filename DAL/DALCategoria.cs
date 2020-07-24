@@ -18,7 +18,6 @@ namespace DAL
             this.conexao = cx;
         }
 
-
         public void Incluir(ModeloCategoria modelo) //Metodo incluir -- insere uma categoria no BD
         {
             SqlCommand cmd = new SqlCommand();
