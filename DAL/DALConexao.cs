@@ -11,7 +11,7 @@ namespace DAL
     public class DALConexao
     {
         private String _stringConexao; //Armazena a string de conexão
-        private SqlConnection _conexao; //Conexão tipo SQL
+        private SqlConnection _conexao; //Conexão SQL
 
 
         public DALConexao(String dadosConexao) //Construtor que rece uma tring de conexao
