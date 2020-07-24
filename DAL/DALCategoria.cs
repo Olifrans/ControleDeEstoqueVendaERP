@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//Implementa os metodos de acesso ao banco de dados
+//Class responsavél por implementa os metodos de acesso ao banco de dados
 namespace DAL
 {
     public class DALCategoria
