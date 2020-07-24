@@ -19,7 +19,9 @@ namespace GUI
 
         private void subcategoriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmCadastroSubCategoria f = new frmCadastroSubCategoria();
+            f.ShowDialog();
+            f.Dispose();
         }
 
         private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
