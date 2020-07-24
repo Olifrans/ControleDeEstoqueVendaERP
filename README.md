@@ -3,12 +3,10 @@ Estudando C#
 ERPControleDeEstoque
 Aprendendo C# Sistema de Armazenagem
 
-Sistema baseado em camadas onde temos os modelos que representa as tabelas utilizadas
+Sistema feito em camadas, com os modelos que representa as tabelas utilizadas
 
-GUI representa a interface grafica do sistema Controle de Estoque, onde o usuario interagem com o sistema
-Esta referenciado com o projeto Modelo, DAL e BLL, ou seja,tudo que estiverem em ambos, pode ser usado por GUI
-
-
+GUI representa a interface gráfica do sistema Controle de Estoque, onde o usuario interagem com o sistema
+Esta referenciado com DAL e BLL, ou seja,tudo que estiverem em ambos, pode ser usado por GUI
 
 Modelo contem as class que representam o banco de dados, validada as informações para gravar no BD
 Classe ModeloCatergoria representa a tabela Categoria do BD
@@ -26,3 +24,5 @@ Capta as informações por meio de modelo, validada as informações e grava no 
 Exemplo No GUI tela de cadastro de cliente, o BLL tem a classe que valida as informaçoes do cliente 
 Esta referenciado com o projeto DAL e Modelo, ou seja,tudo que tiver em ambos pode ser usado por BLL
 
+
+Obs: Proximo commit   irei corrigir o erro ao salvar as subcategorias!
