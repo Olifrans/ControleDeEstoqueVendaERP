@@ -20,8 +20,8 @@ namespace GUI
 
         public void LimpaTela()
         {
-            txtScatCod.Clear();
             txtNome.Clear();
+            txtScatCod.Clear();           
         }
 
         private void frmCadastroSubCategoria_Load(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace GUI
             DALConexao cx = new DALConexao(DadosDaConexao.StringDeConexao);
             BLLCategoria bll = new BLLCategoria(cx);
 
-            cbCatCod.DataSource = bll.Localizar(""); //Origem dos dados, retornando todos s dados da categoria mostrando na tela os dados nome e código
+            cbCatCod.DataSource = bll.Localizar(""); //Origem dos dados, retornando todos s dados da categoria mostrando na tela os dados nome e código          
             cbCatCod.DisplayMember = "cat_nome";
             cbCatCod.ValueMember = "cat_cod";
         }
@@ -39,7 +39,7 @@ namespace GUI
         {
             try
             {
-                //Leitura dos  na tela
+                //Leitura dos dados
                 ModeloSubCategoria modelo = new ModeloSubCategoria();
                 modelo.ScatNome = txtNome.Text;
                 modelo.CatCod = Convert.ToInt32(cbCatCod.SelectedValue);
@@ -91,8 +91,6 @@ namespace GUI
 
         private void btExcluir_Click(object sender, EventArgs e)
         {
-
-
             try
             {
                 DialogResult d = MessageBox.Show("Deseja excluir o registro?", "Aviso", MessageBoxButtons.YesNo);

@@ -16,13 +16,13 @@ namespace BLL
         {
             this.conexao = cx;
         }
-        public void Incluir(ModeloSubCategoria modelo) //Metodo incluir -- insere uma categoria no BD
+        public void Incluir(ModeloSubCategoria modelo) //Metodo incluir -- insere uma subcategoria no BD
         {
             if (modelo.ScatNome.Trim().Length == 0)
             {
                 throw new Exception("O nome da subcategoria é obrigatório");
             }
-            if (modelo.CatCod <=0);
+            if (modelo.CatCod <=0)
             {
                 throw new Exception("O código da categoria é obrigatório");
             }
@@ -37,11 +37,11 @@ namespace BLL
             {
                 throw new Exception("O nome da subcategoria é obrigatório");
             }
-            if (modelo.CatCod <= 0) ;
+            if (modelo.CatCod <= 0)
             {
                 throw new Exception("O código da categoria é obrigatório");
             }
-            if (modelo.ScatCod <= 0) ;
+            if (modelo.ScatCod <= 0)
             {
                 throw new Exception("O código da subcategoria é obrigatório");
             }

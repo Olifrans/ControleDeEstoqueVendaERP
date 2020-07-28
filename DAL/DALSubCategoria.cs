@@ -25,11 +25,12 @@ namespace DAL
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conexao.ObjetoConexao;
             cmd.CommandText = " insert into subcategoria(cat_cod, scat_nome) values (@catcode, @nome); select @@IDENTITY;";
-            cmd.Parameters.AddWithValue("@catcd", modelo.CatCod);
+            cmd.Parameters.AddWithValue("@catcod", modelo.CatCod);
             cmd.Parameters.AddWithValue("@nome", modelo.ScatNome);
             conexao.Conectar();
-            modelo.ScatCod = Convert.ToInt32(cmd.ExecuteScalar());
+            modelo.CatCod = Convert.ToInt32(cmd.ExecuteScalar());
             }
+
             catch(Exception erro)
             {
                 throw new Exception(erro.Message);

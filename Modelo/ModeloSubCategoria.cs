@@ -10,13 +10,14 @@ namespace Modelo
 
     public class ModeloSubCategoria
     {
-        //Construtor sem parametro - ele é chamado todo vez que estaciamos oum objeto - e possue o mesmo nome da classe
+        //Construtor sem parametro - ele é chamado todo vez que estaciamos um objeto - e possue o mesmo nome da classe
         public ModeloSubCategoria()
         {
-            //Iniciand as propriedades
-            this.CatCod = 0;
+            //Iniciando as propriedades
+            
             this.ScatCod = 0;           
             this.ScatNome = "";
+            this.CatCod = 0;
         }
 
         //Construtor com parametro - ele é chamado todo vez que estaciamos oum objeto - e possue o mesmo nome da classe
@@ -28,6 +29,7 @@ namespace Modelo
             this.ScatNome = snome;
         }
 
+             
         private int scat_cod;
         public int ScatCod
         {

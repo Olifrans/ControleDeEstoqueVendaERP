@@ -26,11 +26,6 @@ namespace Modelo
         }
 
 
-
-
-
-
-
         private int cat_cod;
             public int CatCod
         {
